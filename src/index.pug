@@ -4,6 +4,7 @@ html(lang='en')
     meta(charset='utf-8')
     link(rel='stylesheet', type='text/css', href='css/index.css')
     link(rel='stylesheet', type='text/css', href='pkg/semantic-ui/semantic.min.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Ruthie')
     script(src='pkg/jquery/jquery.min.js')
     script(src='pkg/semantic-ui/semantic.min.js')
     title thujas.net: official thujas's band website
@@ -12,20 +13,23 @@ html(lang='en')
     .ui.container.center.aligned
       br
       
-    .ui.container.center.aligned
-      h1 thujas
+    .ui.equal.width.grid.centered.sitetitle
+      h1.sitetitle thujas
     
-    .ui.container.center.aligned
-      br
+    .ui.divider
+
+    .ui.equal.width.grid.sitemenu
+      a.sitelink.column.center.aligned(href="") BUY ALBUM
+      a.sitelink.column.center.aligned(href="") SOUNDCLOUD
+      a.sitelink.column.center.aligned(href="") VIDEOS
+      a.sitelink.column.center.aligned(href="") SPOTIFY
+      
+    .ui.divider
     
     .ui.container.center.aligned
        //-img.ghost(src='img/thujas.png')
        h3 Tracks
        iframe(width='100%' height='166' scrolling='no' frameborder='no' allow='autoplay' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/575696757&color=%23276140&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true')
-       //-.ui.container.fluid.segment: img.projectimg(src='img/textbeat.png')
-       //-.ui.container.fluid.segment: img.projectimg(src='img/qor.png')
-       //-.ui.container.fluid.segment: img.projectimg(src='img/microarmy.png')
-       //-.ui.container.fluid.segment: img.projectimg(src='img/bomberoni.png')
     br
     .ui.container.aligned
         h4.center thujas is: 
@@ -33,52 +37,14 @@ html(lang='en')
           .item
             strong Cody Woodman
             | &nbsp;
-            | (Guitar, Bass)
+            | (Guitar, Bass, Production)
           .item
             strong Grady O'Connell
             | &nbsp;
             | (Drums, Synth, Keys)
-    br
+    
+    .ui.divider
+      
     .ui.container.center.aligned
       p Copyright (c) 2019 Thujas
-    //-.ui.grid
-    //-    .eight.wide.column
-    //-        img.projectimg(src='img/textbeat.png')
-    //-.ui.container.center.aligned
-    //-  a(href='https://github.com/flipcoder/qor'): img.projectimg(src='img/qor.png')
-    //-  a(href='https://github.com/flipcoder/textbeat'): img.projectimg(src='img/textbeat.png')
-    //-  a(href='https://github.com/flipcoder/game-off-2016'): img.projectimg(src='img/hip.png')
-    //-  a(href='https://github.com/flipcoder/microarmy'): img.projectimg(src='img/microarmy.png')
-    //-  a(href='https://github.com/flipcoder/bouncingship'): img.projectimg(src='img/bouncingship.png')
-    //-  a(href='https://github.com/flipcoder/bomberoni'): img.projectimg(src='img/bomberoni.png')
-          
-    //-br
-    
-    //-.ui.container
-    //-  a.ui.red.label(href='https://github.com/flipcoder/FRAG.EXE') FRAG.EXE
-    //-    .detail OpenGL First person shooter w/ online play.
-    //-  br
-    //-  br
-    //-  a.ui.grey.label(href='https://github.com/flipcoder/mx') mx
-    //-    .detail C++ concurrency: await, yield, channels, i/o multiplexer (experimental)
-    //-  br
-    //-  br
-    //-  a.ui.yellow.label(href='https://github.com/flipcoder/litebot') litebot
-    //-    .detail IRC bot w/ plugin support and built-in card game
-    //-  br
-    //-  br
-    //-  a.ui.pink.label(href='https://github.com/flipcoder/kit') kit
-    //-    .detail C++ utility library
-    //-  br
-    //-  br
-    //-  a.ui.red.label(href='https://github.com/flipcoder/qorpse') qorpse
-    //-    .detail Top-down retro horror shooter.  Written in my own engine.
-    //-  br
-    //-  br
-    
-    //-.ui.container.center.aligned
-    //-  h3 But wait, there's more! 
-    //-  a(href='https://github.com/flipcoder/') View My GitHub
-    //-  br
-    //-  br
 
